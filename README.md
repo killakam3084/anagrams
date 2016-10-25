@@ -11,6 +11,7 @@
 
 #### **tweet_data/ contains:** 
 - a small .json file of sample tweet data -- **tweets.json**
+
 #### **bin/**
 - the binaries to execute; added to path with `pip install`
 
