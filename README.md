@@ -11,28 +11,29 @@
 
 #### **tweet_data/ contains:** 
 - a small .json file of sample tweet data -- **tweets.json**
+#### **bin/**
+- the binaries to execute; added to path with `pip install`
 
 #### _To execute_
-**Clone repository:** 
+1. **Clone repository:** 
 `git clone https://github.com/killakam3084/anagrams.git`
+2. **Install anagrams package** `cd anagrams/ && pip install .` 
+3.  **Run script** 
+		
+		usage: find-anagrams [-h] input_file
+				A vanilla program to detect anagrams in tweet json
 
-**Run the script:**
+		positional arguments:
+		input_file  The input file of tweets.
 
-	usage: anagrams.py [-h] input_file
+		optional arguments:
+		-h, --help  show this help message and exit
 
-	A vanilla program to detect anagrams in tweet json
-
-	positional arguments:
-	  input_file  The input file of tweets.
-
-	optional arguments:
-	  -h, --help  show this help message and exit
-
-	Certainly this isn't how Anagramatron does it
+		Certainly this isn't how Anagramatron does it
 
 
 #### _Example_
-	./anagrams.py tweets.json
+	find-anagrams tweets.json
 
 #### *Notes on ijjson iterative parser***
 - ijson is an iterative JSON parser with a standard Python iterator interface
