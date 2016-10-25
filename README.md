@@ -32,6 +32,26 @@
 		Certainly this isn't how Anagramatron does it
 4. _**Example**_
 	`find-anagrams tweets.json`
+5. **TO MAKE SAMPLE JSON**
+	` make-tweet-data -l 3 -n 100000 tweets.json dictionary.txt`
+	
+		usage: make-tweet-data [-h] [-l, word-length WORD_LENGTH]
+                	       [-n, number-of-tweets NUM_TWEETS]
+                       	output_file dictionary_file
+
+				A program to make dummy tweet json for anagrams
+
+		positional arguments:
+  		output_file           A output file to write tweet data to.
+  		dictionary_file       The dictionary to construct anagrams.
+
+		optional arguments:
+  		-h, --help            show this help message and exit
+  		-l, word-length WORD_LENGTH
+                        The max character count for a word.
+  		-n, number-of-tweets NUM_TWEETS
+                        The number of tweets to constructs.
+	
 
 #### *Notes on ijjson iterative parser***
 - ijson is an iterative JSON parser with a standard Python iterator interface
