@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import argparse
-import ijson.backends.yajl2_cffi
+import ijson
 import time
 from memory_profiler import profile
 
@@ -10,8 +10,8 @@ class Tweet:
     """
     A representation of a Tweet
     """
-    def __init__(self, tweet_id, original_tweet_text, tweet_text):
 
+    def __init__(self, tweet_id, original_tweet_text, tweet_text):
         self.id = tweet_id
         self.orig_text = original_tweet_text
         self.text = tweet_text
@@ -127,16 +127,6 @@ def main():
                             del tweet_obj_dict[tweet_key]
                             print "Anagram  Tweet   id:{0} text:{1}\n".format(
                                 tweet_id, original_text)
-                    else:
-                        '''
-                        print
-                        print "*****DUPLICATE TWEETS FOUND!*****"
-                        print "Original Tweet   id:{0} text:{1}".format(
-                            tweet_obj_dict[tweet_key].id,
-                            tweet_obj_dict[tweet_key].orig_text)
-                        print "Duplicate  Tweet   id:{0} text:{1}\n".format(
-                            tweet_id, original_text)
-                            '''
                 else:
                     tweet_obj = Tweet(tweet_id, original_text, tweet_text)
                     tweet_obj_dict[tweet_key] = tweet_obj
