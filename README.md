@@ -16,8 +16,7 @@
 - the binaries to execute; added to path with `pip install`
 
 #### _To execute_
-1. **Clone repository:** 
-`git clone https://github.com/killakam3084/anagrams.git`
+1. **Clone repository:** `git clone https://github.com/killakam3084/anagrams.git`
 2. **Install anagrams package** `cd anagrams/ && pip install .` 
 3.  **Run script** 
 		
@@ -31,10 +30,8 @@
 		-h, --help  show this help message and exit
 
 		Certainly this isn't how Anagramatron does it
-
-
-#### _Example_
-	find-anagrams tweets.json
+4. _**Example**_
+	`find-anagrams tweets.json`
 
 #### *Notes on ijjson iterative parser***
 - ijson is an iterative JSON parser with a standard Python iterator interface
