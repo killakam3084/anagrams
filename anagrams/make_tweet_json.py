@@ -22,11 +22,11 @@ def parse_args():
                         help='The dictionary to construct anagrams.'
                         )
     parser.add_argument('-l, word-length', type=int,
-                        help='The dictionary to construct anagrams.',
+                        help='The max character count for a word.',
                         dest='word_length'
                         )
     parser.add_argument('-n, number-of-tweets', type=int,
-                        help='The dictionary to construct anagrams.',
+                        help='The number of tweets to constructs.',
                         dest='num_tweets'
                         )
     try:

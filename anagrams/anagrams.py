@@ -133,7 +133,3 @@ def main():
                 print "Processed Tweet: " + "id:" + tweet_id + "    " + "text: " + original_text
                 tweet_text = ""
                 tweet_id = ""
-
-
-if __name__ == '__main__':
-    main()

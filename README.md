@@ -1,4 +1,4 @@
-# Recipe Converter
+# Tweet Anagram Finder
 ---
 #### **anagrams/ contains:** 
 - a file which parses input tweet data -- **anagrams.py**
@@ -7,10 +7,10 @@
 #### **dictionaries/ contains:** 
 - a small dictionary of the 1,000 most common words **common_word_dictionary.txt**
 - a large dictionary of ~ 170,000 words -- **dictionary.txt**
+- these are for passing to **make_tweet_json.py** to construct tweet data
 
 #### **tweet_data/ contains:** 
 - a small .json file of sample tweet data -- **tweets.json**
-- a large .zip
 
 #### _To execute_
 **Clone repository:** 
@@ -34,8 +34,8 @@
 #### _Example_
 	./anagrams.py tweets.json
 
-#### *Notes on ijjson iterative parser*
+#### *Notes on ijjson iterative parser***
 - ijson is an iterative JSON parser with a standard Python iterator interface
 - Ijson provides several implementations of the actual parsing in the form of backends located in ijson/backends:
 - The script should output memory_profiler data showing the effectiveness of ijson's lazy loading
-- Processed 10,000,000 two word tweets with words of length 4 in about an hour
+- Processed 50,000,000 two word tweets with words of length 4 in about ~ 2 hours, around ~3.5G file size.

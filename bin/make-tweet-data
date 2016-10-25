@@ -1,0 +1,4 @@
+#!/usr/local/env python
+from anagrams.make_tweet_json import main as make_tweet_json_main
+
+make_tweet_json_main()
