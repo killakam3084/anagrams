@@ -8,6 +8,6 @@ setup(name='anagrams',
       author_email='cameron.rison@utexas.edu',
       license='MIT',
       packages=['anagrams'],
-      install_requires=['ijson'],
+      install_requires=['ijson, memory_profiler, psutil'],
       scripts=['bin/find-anagrams', 'bin/make-tweet-data'],
       zip_safe=False)
