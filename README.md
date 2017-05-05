@@ -1,5 +1,7 @@
 # Tweet Anagram Finder
 ---
+## A program to mimic the behavior of https://twitter.com/anagramatron
+
 #### **anagrams/ contains:** 
 - a file which parses input tweet data -- **anagrams.py**
 - a file to make dummy tweet data given a dictionary -- **make_tweet.json**
@@ -18,21 +20,8 @@
 #### _To execute_
 1. **Clone repository:** `git clone https://github.com/killakam3084/anagrams.git`
 2. **Install anagrams package** `cd anagrams/ && pip install .`
-4.  **Run script** 
-		
-		usage: find-anagrams [-h] input_file
-				A vanilla program to detect anagrams in tweet json
 
-		positional arguments:
-		input_file  The input file of tweets.
-
-		optional arguments:
-		-h, --help  show this help message and exit
-
-		Certainly this isn't how Anagramatron does it
-4. _**Example**_
-	`find-anagrams tweets.json`
-5. **TO MAKE SAMPLE JSON**
+5. **To make sample JSON**
 	` make-tweet-data -l 3 -n 100000 tweets.json dictionary.txt`
 	
 		usage: make-tweet-data [-h] [-l, word-length WORD_LENGTH]
@@ -51,7 +40,18 @@
                         The max character count for a word.
   		-n, number-of-tweets NUM_TWEETS
                         The number of tweets to constructs.
-	
+4.  **Run script** 
+		
+		usage: find-anagrams [-h] input_file
+				A vanilla program to detect anagrams in tweet json
+
+		positional arguments:
+		input_file  The input file of tweets.
+
+		optional arguments:
+		-h, --help  show this help message and exit
+
+		Certainly this isn't how Anagramatron does it	
 
 #### *Notes on ijjson iterative parser***
 - ijson is an iterative JSON parser with a standard Python iterator interface
